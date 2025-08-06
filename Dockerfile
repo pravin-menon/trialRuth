@@ -17,5 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of your code
 COPY . .
 
+COPY .env /app/.env
+
 # Command to run the application
-CMD ["python", "main.py"]
+CMD ["python", "mailercloud_fetch.py"]
